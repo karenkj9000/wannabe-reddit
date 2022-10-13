@@ -48,6 +48,12 @@ const Register: React.FC<registerProps> = ({}) => {
             >
               Register
             </Button>
+            <Button
+              mt={4}
+              colorScheme="red"
+            >
+              Cancel
+            </Button>
           </Form>
         )}
       </Formik>
