@@ -26,6 +26,8 @@ const Register: React.FC<registerProps> = ({}) => {
         }}
       >
         {({ isSubmitting }) => (
+          <>
+          <h1>Please fill the below details to Register</h1>
           <Form>
             <InputField
               name="username"
@@ -55,6 +57,7 @@ const Register: React.FC<registerProps> = ({}) => {
               Cancel
             </Button>
           </Form>
+          </>
         )}
       </Formik>
     </Wrapper>
