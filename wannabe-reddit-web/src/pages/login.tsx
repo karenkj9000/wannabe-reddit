@@ -14,12 +14,12 @@ const Login: React.FC<{}> = ({}) => {
     <Wrapper variant="small">
       <Formik
         initialValues={{ username: "", password: "" }}
-        onSubmit={async (values, {setErrors}) => {
-          const response = await login({ options: values});
-          if(response.data?.login.errors) {
-           setErrors(toErrorMap(response.data.login.errors))
+        onSubmit={async (values, { setErrors }) => {
+          const response = await login({ options: values });
+          if (response.data?.login.errors) {
+            setErrors(toErrorMap(response.data.login.errors));
           } else if (response.data?.login.user) {
-             router.push("/")
+            router.push("/");
           }
         }}
       >
@@ -45,6 +45,9 @@ const Login: React.FC<{}> = ({}) => {
               isLoading={isSubmitting}
             >
               Login
+            </Button>
+            <Button mt={4} colorScheme="red">
+              Cancel
             </Button>
           </Form>
         )}
