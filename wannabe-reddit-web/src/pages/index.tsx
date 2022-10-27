@@ -8,7 +8,7 @@ const Index = () => (
   <Container height="100vh">
     <DarkModeSwitch />
     <div>
-      hello world
+      hello world!
     </div>
   </Container>
   </>
